@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Ray.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:Ray.WebApi.Controllers.AuthorizeController.Token(Ray.WebApi.ViewModels.LoginViewModel)">
+            <summary>
+            获取token
+            </summary>
+            <remarks>
+            Sample Request
+            
+                POST /api/authorize
+                {
+                    "user":"Ray",
+                    "password":"123456"        
+                }
+            </remarks>
+            <param name="viewModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Ray.WebApi.Controllers.MyAccountController.GetBalance">
+            <summary>
+            获取余额
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Ray.WebApi.Controllers.MyAccountController.AddAmount(Ray.WebApi.ViewModels.AddAmountViewModel)">
+             <summary>
+             增加余额
+             </summary>
+             <remarks>
+             Sample Request
+            
+                 POST /api/myaccount
+                 {
+                   "amount":100     
+                 }
+             </remarks>
+             <param name="amount"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Ray.WebApi.Controllers.MyAccountController.Transfer(Ray.WebApi.ViewModels.TransferViewModel)">
+            <summary>
+            转账
+            </summary>
+            <remarks>
+            Sample Request
+            
+                POST /api/myaccount
+                {
+                 "toAccountId":0
+                 "amount":100
+                }
+            </remarks>
+            <param name="transfer"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

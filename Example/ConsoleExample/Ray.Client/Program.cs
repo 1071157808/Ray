@@ -81,9 +81,9 @@ namespace Ray.Client
                             {
                                 c.UserName = "admin";
                                 c.Password = "admin";
-                                c.Hosts = new[] { "192.168.125.230:5672" };
+                                c.Hosts = new[] { "127.0.0.1:5672" };
                                 c.MaxPoolSize = 100;
-                                c.VirtualHost = "ray";
+                                c.VirtualHost = "/";
                             });
                         })
                         .ConfigureApplicationParts(parts => parts.AddApplicationPart(typeof(IAccount).Assembly).WithReferences())
