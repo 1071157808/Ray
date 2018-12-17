@@ -90,6 +90,8 @@ Example1是一个Console的示例。
 
 3. 启动Ray.Host
 4. 启动Ray.Client
+5. 查看Orleans Dashboard，打开 http://localhost:8080
+![img](https://note.youdao.com/yws/api/personal/file/F3763621DD114B678E16EB6F0A10A210?method=download&shareKey=50d0a0c58afe32247423c0cacefe8305)
 
 #### Example2
 
@@ -99,19 +101,20 @@ Example2是一个Web的示例。有基于jwt的Token认证和转账功能。
 3. 启动Ray.Server
 4. 启动Ray.WebApi
 
-- API页面
-
+- API页面：http://localhost:59926/swagger/index.html
 ![img](https://note.youdao.com/yws/api/personal/file/4EB67A24A90D43EBAD31CBBCA2A2886B?method=download&shareKey=6bba648f418070c7cddca4d7dbf797b9)
-
 - 获取Token，账号：Ray，密码是：123456
-
-![img](https://note.youdao.com/yws/api/personal/file/DD2B982D9AFC40FCA680297975124BFA?method=download&shareKey=f2528c15834e839ee50ebab050065930)
-
 - Authorization
+- 获得发送其他请求
 注意：Bearer与Token之间有一个空格
-
 ![img](https://note.youdao.com/yws/api/personal/file/936358F9A50B44E584145A6F50055CE7?method=download&shareKey=2f3c0d8b901dc5a40d9dd60d2e4adecf)
 
-- 获得发送其他请求
 
-![img](https://note.youdao.com/yws/api/personal/file/F65368966D124CEF813D481F6DFC2165?method=download&shareKey=c863d05c5c7f88157e343a79e8760257)
+
+#### 其他相关Example
+
+[RayTale/OrleansSample](https://github.com/RayTale/OrleansSample)
+
+这里面有两个Example
+- AppClient/AppWebClient与AppHost是简单的Orleans的示例
+- StatelessWebGo与StatelessHost是Service Fabric与Orleans结合的示例
